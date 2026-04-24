@@ -1,0 +1,374 @@
+{
+  "personal": {
+    "name": "Rui Jin",
+    "title": "Creative Software Engineer",
+    "email": "ruijin.ai.dev@outlook.com",
+    "tagline": "Crafting digital experiences with precision and creativity",
+    "description": "Specializing in modern web development and interactive design.",
+    "availability": {
+      "status": true,
+      "message": "Available for freelance work"
+    }
+  },
+  "social": {
+    "github": "https://github.com/ruidev0801",
+    "linkedin": "https://linkedin.com/in/ruijin9981",
+    "twitter": "https://twitter.com/ruijin9981"
+  },
+  "seo": {
+    "siteUrl": "https://yourwebsite.com",
+    "siteName": "Rui Jin's Portfolio",
+    "siteDescription": "Showcasing the work and skills of Rui Jin, a creative software engineer specializing in web development and performance optimization.",
+    "keywords": [
+      "Rui Jin",
+      "Software Engineer",
+      "Web Developer",
+      "Frontend Developer",
+      "Backend Developer",
+      "Full Stack Developer",
+      "Creative Developer",
+      "Web Development",
+      "Performance Optimization",
+      "JavaScript",
+      "TypeScript",
+      "AI Integration",
+      "Cloud Computing",
+      "Automation",
+      "Prompt Engineering",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Visualization",
+      "E-commerce Development",
+      "Real-time Web Applications"
+    ],
+    "ogImage": "/og-image.jpg",
+    "twitterHandle": "@ruijin9981",
+    "googleSiteVerification": "your-verification-code"
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "level": 90
+    },
+    {
+      "name": "Automation",
+      "level": 80
+    },
+    {
+      "name": "JS/TS",
+      "level": 95
+    },
+    {
+      "name": "AI/ML",
+      "level": 85
+    },
+    {
+      "name": "C#",
+      "level": 70
+    },
+    {
+      "name": "Data Analytics",
+      "level": 85
+    },
+    {
+      "name": "SQL/NoSQL",
+      "level": 90
+    },
+    {
+      "name": "Prompt Engineering",
+      "level": 90
+    },
+    {
+      "name": "Cloud (AWS/GCP)",
+      "level": 80
+    },
+    {
+      "name": "AI Integration",
+      "level": 85
+    },
+    {
+      "name": "Web Development",
+      "level": 95
+    },
+    {
+      "name": "Data Visualization",
+      "level": 80
+    }
+  ],
+  "projects": [
+    {
+      "title": "Landing Page for SaaS Product",
+      "description": "Designed and developed a responsive landing page for a SaaS product, focusing on user experience and conversion optimization.",
+      "longDescription": "Created a visually appealing and highly functional landing page for a SaaS product, ensuring an optimal user experience and maximizing conversion rates.",
+      "tech": ["Next", "TailwindCSS", "React", "Resend"],
+      "link": "https://www.trashlion.com/",
+      "github": "https://github.com/Rui0801/trash-lion-app",
+      "featured": true,
+      "features": [
+        "Responsive design for all devices",
+        "Optimized for conversion with clear CTAs",
+        "Integration with Resend for seamless communication",
+        "Clean and modern UI/UX design"
+      ]
+    },
+    {
+      "title": "Shark Detection System using Drone",
+      "description": "An AI-powered system for detecting sharks using drone technology. Utilizes computer vision models to identify and track sharks in real-time.",
+      "longDescription": "Developed an AI-driven shark detection system that utilizes state-of-the-art computer vision models to identify and track sharks in real-time.",
+      "tech": ["Python", "TensorFlow", "OpenCV", "Drone SDK", "YOLO26"],
+      "link": null,
+      "github": "https://github.com/ruidev0801/Shark_Detection",
+      "featured": true,
+      "features": [
+        "Real-time shark detection",
+        "High accuracy with YOLO26 model",
+        "Integration with drone technology",
+        "User-friendly interface for monitoring"
+      ]
+    },
+    {
+      "title": "Photo protection system for Instagram",
+      "description": "An AI-based system designed to protect photos on Instagram from unauthorized use. It uses image recognition and watermarking techniques.",
+      "longDescription": "Created an AI-based photo protection system for Instagram that utilizes image recognition and watermarking techniques to safeguard users' content from unauthorized use.",
+      "tech": ["Python", "TensorFlow", "OpenCV", "Instagram API"],
+      "link": null,
+      "github": "https://github.com/ruidev0801/Photoshield_2026",
+      "featured": true,
+      "features": [
+        "Image recognition for unauthorized use detection",
+        "Watermarking to protect photos",
+        "Integration with Instagram API",
+        "User-friendly dashboard for managing protected content"
+      ]
+    },
+    {
+      "title": "GitHub Scraping Tool",
+      "description": "A tool for scraping and analyzing GitHub data in real-time. Provides insights and actionable information through interactive dashboards.",
+      "longDescription": "Developed a real-time web application for scraping and analyzing GitHub data, providing insights and actionable information through interactive dashboards.",
+      "tech": ["Python", "CustomTkinter", "GitHub API"],
+      "link": null,
+      "github": "https://github.com/ruidev0801/Github_Scraper_2026",
+      "featured": true,
+      "features": [
+        "Real-time GitHub data scraping",
+        "Interactive dashboards for data visualization",
+        "CustomTkinter for a user-friendly interface",
+        "Integration with GitHub API for comprehensive data access"
+      ]
+    }    
+  ],
+  "testimonials": [
+    {
+      "name": "Sementha Lee",
+      "role": "CEO",
+      "company": "Nexora Systems",
+      "avatar": "JD",
+      "content": "Rui is an exceptional developer who consistently delivers high-quality work. His attention to detail and creativity are unmatched.",
+      "rating": 5
+    },
+    {
+      "name": "Reshmi Patel",
+      "role": "Product Manager",
+      "company": "BlueCircuit Technologies",
+      "avatar": "JD",
+      "content": "Working with Rui was a fantastic experience. He brought our vision to life with his technical expertise and innovative approach.",
+      "rating": 5
+    },
+    {
+      "name": "Tilman Schmidt",
+      "role": "CTO",
+      "company": "Altabyte Labs",
+      "avatar": "JS",
+      "content": "Rui's ability to solve complex problems and deliver results on time is truly impressive. He is a valuable asset to any team.",
+      "rating": 5
+    }
+  ],
+  "experience": [
+    {
+      "title": "AI/ML Engineer",
+      "company": "Self-Employed", 
+      "location": "USA",
+      "workType": "Remote",
+      "startDate": "2025-03",
+      "endDate": null,
+      "current": true,
+      "description": "Developed and deployed machine learning models for various applications, improving performance and user experience.",
+      "achievements": [
+        "Implemented AI solutions that increased efficiency by 25%",
+        "Collaborated with cross-functional teams to integrate AI into products",
+        "Published research on AI model optimization"
+      ],
+      "technologies": ["Python", "TensorFlow", "Scikit-learn", "AWS"]
+    },
+    {
+      "title": "Prompt Engineer",
+      "company": "Outlier.ai",
+      "location": "USA",
+      "workType": "Remote",
+      "startDate": "2022-07",
+      "endDate": "2026-01",
+      "current": false,
+      "description": "Optimized prompts for AI applications, improving response accuracy and user satisfaction.",
+      "achievements": [
+        "Enhanced AI model performance through effective prompt engineering",
+        "Collaborated with AI researchers to develop innovative solutions",
+        "Contributed to open-source projects related to prompt engineering"
+      ],
+      "technologies": ["Python", "AI/ML", "Natural Language Processing", "Cloud Computing"]
+    },
+    {
+      "title": "Freelance Software Developer",
+      "company": "Upwork",
+      "location": "USA",
+      "workType": "Remote",
+      "startDate": "2020-06",
+      "endDate": "2022-12",
+      "current": false,
+      "description": "Provided web development and AI integration services to various clients.",
+      "achievements": [
+        "Completed 20+ projects with 5-star ratings",
+        "Specialized in AI-driven solutions",
+        "Built custom web applications"
+      ],
+      "technologies": ["JavaScript", "Python", "AI/ML", "Cloud Computing"]
+    },
+    {
+      "title": "Intern Software Engineer",
+      "company": "Tech Startup",
+      "location": "Hong Kong, Hong Kong",
+      "workType": "Hybrid",
+      "startDate": "2018-06",
+      "endDate": "2019-08",
+      "current": false,
+      "description": "Assisted in developing and testing web applications.",
+      "achievements": [
+        "Gained hands-on experience with modern development tools",
+        "Collaborated with senior developers to deliver quality code"
+      ],
+      "technologies": ["React", "Flask", "Python", "Git"]
+    },
+    {
+      "title": "Volunteer Web Developer",
+      "company": "Non-Profit Organization",
+      "location": "Hong Kong, Hong Kong",
+      "workType": "Remote",
+      "startDate": "2019-09",
+      "endDate": "2020-05",
+      "current": false,
+      "description": "Developed and maintained websites for a non-profit organization.",
+      "achievements": [
+        "Improved website performance by 30%",
+        "Enhanced user experience with responsive design"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computer Science",
+      "institution": "City University of Hong Kong",
+      "location": "Hong Kong, Hong Kong",
+      "startDate": "2016-05",
+      "endDate": "2020-01",
+      "current": false,
+      "description": "Studied core computer science concepts and specialized in software development and AI.",
+      "achievements": [
+        "Graduated with honors",
+        "Completed a thesis on AI-driven web applications",
+        "Active member of the Computer Science Club"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer",
+      "issuer": "Amazon Web Services",
+      "date": "2023-06",
+      "credentialId": "AWSD-9K4M-2P7X",
+      "url": "https://www.credly.com/badges/aws-certified-developer-associate"
+    },
+    {
+      "name": "Meta Front-End Developer",
+      "issuer": "Meta",
+      "date": "2022-12",
+      "credentialId": "META-FE-8T2R-5LQ1",
+      "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer"
+    },
+    {
+      "name": "AI Engineer Professional Certificate",
+      "issuer": "IBM",
+      "date": "2024-03",
+      "credentialId": "IBM-AIE-4N6V-1ZP3",
+      "url": "https://www.coursera.org/professional-certificates/ibm-ai-engineer"
+    },
+    {
+      "name": "Google Cloud Professional Data Engineer",
+      "issuer": "Google Cloud",
+      "date": "2023-09",
+      "credentialId": "GCP-DE-7X5Y-3W8Z",
+      "url": "https://www.credly.com/badges/google-cloud-professional-data-engineer"
+    },
+    {
+      "name": "Certified Kubernetes Application Developer (CKAD)",
+      "issuer": "Cloud Native Computing Foundation",
+      "date": "2024-01",
+      "credentialId": "CKAD-9M3L-2Q7X",
+      "url": "https://www.cncf.io/certification/ckad/"
+    }
+  ],
+  "services": [
+    {
+      "title": "Web Development",
+      "description": "Building responsive and high-performance websites tailored to your needs.",
+      "icon": "web"
+    },
+    {
+      "title": "AI Integration",
+      "description": "Integrating AI solutions to enhance functionality and user experience.",
+      "icon": "ai"
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Improving website speed and efficiency for better user engagement.",
+      "icon": "performance"
+    },
+    {
+      "title": "Prompt Engineering",
+      "description": "Crafting effective prompts for AI models to achieve desired outcomes.",
+      "icon": "prompt"
+    }
+  ],
+  "stats": [
+    {
+      "value": 50,
+      "label": "Projects Completed",
+      "suffix": "+"
+    },
+    {
+      "value": 30,
+      "label": "Happy Clients",
+      "suffix": "+"
+    },
+    {
+      "value": 5,
+      "label": "Years Experience",
+      "suffix": "+"
+    },
+    {
+      "value": 100,
+      "label": "Client Satisfaction",
+      "suffix": "%"
+    }
+  ],
+  "contact": {
+    "email": "ruijin.ai.dev@outlook.com",
+    "phone": null,
+    "location": "Hong Kong, Hong Kong",
+    "availability": "Monday - Friday, 9AM - 6PM (CST)",
+    "responseTime": "Within 24 hours"
+  },
+  "files": {
+    "cv": "/Rui_Jin_Resume.docx"
+  },
+  "about": "I'm a passionate developer who loves turning ideas into reality through code. With a keen eye for design and a strong technical foundation, I create experiences that are both beautiful and functional. My approach combines creativity with technical excellence, ensuring every project not only looks great but performs exceptionally."
+}
