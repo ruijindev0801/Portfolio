@@ -17,7 +17,7 @@ interface Education {
 
 export default function Education() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const education: Education[] = settings.education;
 
@@ -63,9 +63,7 @@ export default function Education() {
                 </div>
               </div>
 
-              {edu.description && (
-                <p className="text-muted mb-4">{edu.description}</p>
-              )}
+              {edu.description && <p className="text-muted mb-4">{edu.description}</p>}
 
               {edu.achievements && edu.achievements.length > 0 && (
                 <div>

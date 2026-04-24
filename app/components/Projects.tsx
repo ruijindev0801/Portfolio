@@ -20,11 +20,10 @@ interface Project {
 
 export default function Projects() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Filter featured projects or show all
   const projects: Project[] = settings.projects.filter((p) => p.featured !== false);
 
   const containerVariants = {
@@ -65,7 +64,7 @@ export default function Projects() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={isInView ? 'visible' : 'hidden'}
           className="grid md:grid-cols-2 gap-8"
         >
           {projects.map((project) => (
@@ -80,17 +79,12 @@ export default function Projects() {
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-accent transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-muted leading-relaxed">
-                  {project.description}
-                </p>
+                <p className="text-muted leading-relaxed">{project.description}</p>
               </div>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tech: string) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 text-sm border border-muted text-muted"
-                  >
+                  <span key={tech} className="px-3 py-1 text-sm border border-muted text-muted">
                     {tech}
                   </span>
                 ))}
@@ -104,7 +98,7 @@ export default function Projects() {
                   }}
                   className="flex items-center gap-2 text-accent hover:underline"
                 >
-                  <span>View Details →</span>
+                  <span>View Details -&gt;</span>
                 </button>
                 {project.link && (
                   <a
@@ -139,7 +133,6 @@ export default function Projects() {
         </motion.div>
       </div>
 
-      {/* Project Modal */}
       {selectedProject && (
         <ProjectModal
           isOpen={isModalOpen}

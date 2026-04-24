@@ -5,29 +5,27 @@ import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react';
 import settings from '@/settings.json';
 
 export default function Footer() {
-  
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const socials = [
-    { icon: Github, link: settings.social.github, label: "GitHub" },
-    { icon: Linkedin, link: settings.social.linkedin, label: "LinkedIn" },
-    { icon: Twitter, link: settings.social.twitter, label: "Twitter" },
-    { icon: Mail, link: `mailto:${settings.personal.email}`, label: "Email" }
+    { icon: Github, link: settings.social.github, label: 'GitHub' },
+    { icon: Linkedin, link: settings.social.linkedin, label: 'LinkedIn' },
+    { icon: Twitter, link: settings.social.twitter, label: 'Twitter' },
+    { icon: Mail, link: `mailto:${settings.personal.email}`, label: 'Email' },
   ];
 
   const quickLinks = [
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" }
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <footer className="border-t border-muted py-12 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
-          {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -35,12 +33,9 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-2xl font-bold mb-4">{settings.personal.name}</h3>
-            <p className="text-muted leading-relaxed">
-              {settings.personal.tagline}
-            </p>
+            <p className="text-muted leading-relaxed">{settings.personal.tagline}</p>
           </motion.div>
 
-          {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,10 +46,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-muted hover:text-accent transition-colors duration-300"
-                  >
+                  <a href={link.href} className="text-muted hover:text-accent transition-colors duration-300">
                     {link.name}
                   </a>
                 </li>
@@ -62,7 +54,6 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +78,6 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-muted gap-4">
           <motion.p
             initial={{ opacity: 0 }}

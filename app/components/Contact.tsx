@@ -8,13 +8,13 @@ import settings from '@/settings.json';
 
 export default function Contact() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
+
   const socials = [
-    { icon: Github, label: "GitHub", link: settings.social.github },
-    { icon: Linkedin, label: "LinkedIn", link: settings.social.linkedin },
-    { icon: Twitter, label: "Twitter", link: settings.social.twitter },
-    { icon: Mail, label: "Email", link: `mailto:${settings.personal.email}` }
+    { icon: Github, label: 'GitHub', link: settings.social.github },
+    { icon: Linkedin, label: 'LinkedIn', link: settings.social.linkedin },
+    { icon: Twitter, label: 'Twitter', link: settings.social.twitter },
+    { icon: Mail, label: 'Email', link: `mailto:${settings.personal.email}` },
   ];
 
   const containerVariants = {
@@ -58,11 +58,10 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="text-xl md:text-2xl text-muted leading-relaxed mb-8">
-              I&apos;m always interested in hearing about new projects and opportunities. 
-              Whether you have a question or just want to say hi, feel free to reach out.
+              I&apos;m always open to discussing new products, freelance opportunities, and AI-focused collaborations.
+              If you&apos;re building something meaningful and need a strong engineering partner, feel free to reach out.
             </p>
 
-            {/* Contact Details */}
             <div className="space-y-4 mb-8">
               {settings.contact.email && (
                 <div className="flex items-center gap-3 text-muted">
@@ -99,11 +98,11 @@ export default function Contact() {
                 </div>
               )}
             </div>
-            
+
             <motion.div
               variants={containerVariants}
               initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
+              animate={isInView ? 'visible' : 'hidden'}
               className="flex flex-wrap gap-6"
             >
               {socials.map((social) => (

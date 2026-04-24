@@ -20,7 +20,7 @@ interface Experience {
 
 export default function Experience() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const experiences: Experience[] = settings.experience;
 
@@ -46,7 +46,6 @@ export default function Experience() {
               transition={{ delay: index * 0.2, duration: 0.6 }}
               className="border-l-2 border-accent pl-8 relative"
             >
-              {/* Timeline dot */}
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-accent rounded-full" />
 
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -95,10 +94,7 @@ export default function Experience() {
               {exp.technologies && exp.technologies.length > 0 && (
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech: string) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 text-sm border border-muted text-muted"
-                    >
+                    <span key={tech} className="px-3 py-1 text-sm border border-muted text-muted">
                       {tech}
                     </span>
                   ))}
