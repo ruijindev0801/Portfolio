@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Code2, Palette, Zap, LucideIcon } from 'lucide-react';
+import { Code2, Cpu, Eye, LucideIcon, Zap } from 'lucide-react';
 import RevealText from './RevealText';
 import settings from '@/settings.json';
 
@@ -20,20 +20,22 @@ interface SkillWithIcon {
 
 export default function About() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  
-  // Map icon names to actual icon components
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
+
   const iconMap: Record<string, LucideIcon> = {
-    Code2: Code2,
-    Palette: Palette,
-    Zap: Zap
+    Code2,
+    Cpu,
+    Zap,
+    Eye,
   };
 
   const skills: SkillWithIcon[] = settings.services.map((service: Service) => ({
     icon: iconMap[service.icon] || Code2,
     title: service.title,
-    description: service.description
+    description: service.description,
   }));
+
+  const aboutParagraphs = Array.isArray(settings.about) ? settings.about : [settings.about];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -61,10 +63,7 @@ export default function About() {
     <section id="about" className="min-h-screen flex items-center justify-center px-6 md:px-12 py-24">
       <div className="max-w-7xl w-full" ref={ref}>
         <div className="mb-16">
-          <RevealText 
-            text="About Me"
-            className="text-5xl md:text-7xl font-bold mb-6"
-          />
+          <RevealText text="About Me" className="text-5xl md:text-7xl font-bold mb-6" />
           <motion.div
             initial={{ width: 0 }}
             animate={isInView ? { width: '96px' } : {}}
@@ -76,17 +75,18 @@ export default function About() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={isInView ? 'visible' : 'hidden'}
           className="grid md:grid-cols-2 gap-12 mb-16"
         >
           <motion.div variants={itemVariants}>
-            <p className="text-lg md:text-xl text-muted leading-relaxed mb-6">
-              AI and Machine Learning engineer focused on building reliable systems that actually solve problems for businesses. I work with modern AI models, automation tools, and scalable backend technology to create products that are fast, practical, and ready for real-world use.
-            </p>
-            <p className="text-lg md:text-xl text-muted leading-relaxed">
-              My background is rooted in engineering, so I care about clean architecture, solid execution, and solutions that make a measurable difference. Whether it’s integrating LLMs, building automation pipelines, or designing ML-driven features, I aim to deliver work that is both technically strong and genuinely useful.
-            </p>
-            
+            {aboutParagraphs.map((paragraph, index) => (
+              <p
+                key={index}
+                className={`text-lg md:text-xl text-muted leading-relaxed ${index < aboutParagraphs.length - 1 ? 'mb-6' : ''}`}
+              >
+                {paragraph}
+              </p>
+            ))}
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-6">
