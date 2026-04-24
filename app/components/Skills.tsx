@@ -15,6 +15,11 @@ export default function Skills() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const skills: Skill[] = settings.skills;
+  const getSkillLabel = (level: number) => {
+    if (level >= 95) return 'Pro';
+    if (level >= 85) return 'Advanced';
+    return 'Intermediate';
+  };
 
   return (
     <section className="py-24 px-6 md:px-12">
@@ -42,7 +47,7 @@ export default function Skills() {
             >
               <div className="flex justify-between mb-2">
                 <span className="font-medium">{skill.name}</span>
-                <span className="text-muted">{skill.level}%</span>
+                <span className="text-muted">{getSkillLabel(skill.level)}</span>
               </div>
               <div className="h-2 bg-muted/20 overflow-hidden">
                 <motion.div
