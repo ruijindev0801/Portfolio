@@ -238,21 +238,6 @@
       "technologies": ["JavaScript", "TypeScript", "Python", "React", "AI/ML"]
     },
     {
-      "title": "Intern Software Engineer",
-      "company": "Tech Startup",
-      "location": "Hong Kong",
-      "workType": "Hybrid",
-      "startDate": "2018-06",
-      "endDate": "2019-08",
-      "current": false,
-      "description": "Assisted in developing and testing web applications.",
-      "achievements": [
-        "Gained hands-on experience with modern development tools",
-        "Collaborated with senior developers to deliver quality code"
-      ],
-      "technologies": ["React", "Flask", "Python", "Git"]
-    },
-    {
       "title": "Volunteer Web Developer",
       "company": "Non-Profit Organization",
       "location": "Hong Kong",
@@ -264,6 +249,21 @@
       "achievements": [
         "Improved website performance by 30%",
         "Enhanced user experience with responsive design"
+      ],
+      "technologies": ["React", "Flask", "Python", "Git"]
+    }
+    {
+      "title": "Intern Software Engineer",
+      "company": "Tech Startup",
+      "location": "Hong Kong",
+      "workType": "Hybrid",
+      "startDate": "2018-06",
+      "endDate": "2019-08",
+      "current": false,
+      "description": "Assisted in developing and testing web applications.",
+      "achievements": [
+        "Gained hands-on experience with modern development tools",
+        "Collaborated with senior developers to deliver quality code"
       ],
       "technologies": ["HTML", "CSS", "JavaScript"]
     }
