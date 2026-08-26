@@ -71,23 +71,24 @@ export default function Contact() {
                   </a>
                 </div>
               )}
-              { /*
-                settings.contact.phone && (
+              {settings.contact.phone && (
                 <div className="flex items-center gap-3 text-muted">
                   <Phone className="w-5 h-5" />
                   <a href={`tel:${settings.contact.phone}`} className="hover:text-accent transition-colors">
                     {settings.contact.phone}
                   </a>
                 </div>
-              ) */
-              }
+              )}
               
-              {settings.contact?.location && (
+              {
+                /*
+                settings.contact?.location && (
                 <div className="flex items-center gap-3 text-muted">
                   <MapPin className="w-5 h-5" />
                   <span>{settings.contact?.location}</span>
                 </div>
-              )}
+              )*/
+              }
               
               {settings.contact.availability && (
                 <div className="flex items-center gap-3 text-muted text-sm">
