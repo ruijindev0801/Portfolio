@@ -79,7 +79,7 @@ export default function Contact() {
                   </a>
                 </div>
               )}
-              {settings.contact.location && (
+              {settings.contact?.location && (
                 <div className="flex items-center gap-3 text-muted">
                   <MapPin className="w-5 h-5" />
                   <span>{settings.contact?.location}</span>
