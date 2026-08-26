@@ -82,7 +82,7 @@ export default function Contact() {
               {settings.contact.location && (
                 <div className="flex items-center gap-3 text-muted">
                   <MapPin className="w-5 h-5" />
-                  <span>{settings.contact.location}</span>
+                  <span>{settings.contact?.location}</span>
                 </div>
               )}
               {settings.contact.availability && (
